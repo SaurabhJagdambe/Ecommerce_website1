@@ -1,0 +1,338 @@
+
+
+h1{
+    font-weight: 650 ;
+}
+
+h3{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 500;
+    font-size: larger;
+}
+
+hr{
+    width: 30px;
+    height: 2px;
+    background-color:  rgb(233, 148, 21) ;
+
+}
+
+
+
+
+
+/* navbar */ 
+/* from bootstrap classes  */
+
+
+.navbar{
+    font-size: 17px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 22px;
+    color: black;
+    transition: 0.3s ease ;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link:hover.nav-link:hover.active,.navbar i.active {
+    color: coral;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    /* font-weight: 500; */
+    transition: 0.3s ease;
+    padding: auto;
+}
+
+#bar{
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    /* font-weight: 300; */
+    transition: 0.3 ease;
+    color: black;
+}
+#bar:hover,
+#bar.active{
+    color: #fff;
+}
+
+
+/* mobile nav */
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+button{
+    font-size: 15px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(107, 87, 67);
+    border: none;
+    padding:12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3 ease;
+    color: beige;
+}
+button:hover{
+    background-color: rgb(69, 67, 64);
+}
+
+@media only screen and (max-width: 991px){
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color:  rgb(233, 148, 21);
+    } 
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        color:  #fff ;
+    }
+
+    #navbarSupportedContent > ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right  ;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n ) > a{
+        padding: 10px 0px;
+    }
+}
+    
+
+
+
+
+/* home  */
+
+
+#home span{
+    color: rgb(233, 148, 21);
+}
+
+#home{
+    background-image: url(https://img.freepik.com/free-photo/portrait-handsome-confident-stylish-hipster-lambersexual-modelman-dressed-green-sweater-jeans-fashion-male-posing-studio-near-white-wall_158538-24104.jpg?w=900&t=st=1684582469~exp=1684583069~hmac=12bcc9c0b2e811c09888ba239ed5c9e7805ddfbc31a41feb2564f74c94eb47d7);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: 90%;
+    background-position: top 80px right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+
+/* brand */
+/* #brand {
+    width: 30px;
+    height: 30px;
+} */
+
+.one .details span{
+    color: rgb(231, 227, 221);
+}
+
+#new .one img{
+width:100%;
+height: 100%;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+#new .one  .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    transition: 0.3 ease;
+}
+ 
+#new .one:hover .details {
+    cursor: pointer;
+    background-color:  rgba(227, 144, 92, 0.5);
+}
+
+#new .one .details button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px burlywood solid;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+
+#new .one:hover .details button:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+}
+
+
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    transition: 0.3s ease;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-btn{
+    background: rgb(233, 148, 21);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+ 
+.star i{
+    color: rgb(237, 164, 46);
+    font-size: 14px;
+}
+
+.star{
+    padding: 10px 0px;
+
+}
+
+
+#banner{
+    background-image: url(https://img.freepik.com/free-photo/stylish-european-brunette-woman-red-coat-black-hat-posing-white-wall_273443-4636.jpg?w=900&t=st=1684764124~exp=1684764724~hmac=b9607122d6806006d46c0ed6826fc2eb05a7ad58b8a6bd522785ef6373ee1346);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: 90%;
+    background-position: top 240px right;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#banner h4 {
+    color: #4e4848;
+}
+
+
+#banner h1 {
+    color: #413d38;
+}
+
+#banner button {
+    background-color: #eb9d0c;
+}
+
+
+footer{
+    background-color: #232222;
+}
+
+footer h5{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.2 rem;
+}
+footer h6{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.2 rem;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+}
+
+footer li a:hover{
+    
+    color: #d8d8d8;
+}
+
+footer p{
+    color: #999;
+    font-size: 0.8rem;
+}
+ footer .copyright a{
+    color: #000;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+ }
+
+ footer .copyright a:hover{
+    color: #fff;
+    background-color: #fb774b;
+ 
+}
+
+
+/* mQ */

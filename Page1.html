@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+     crossorigin="anonymous">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Oswald&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="ecom.css">
+
+     <style>
+        
+        /* for fix all img in same block ,size */
+        .product img{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        #fetured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+            background-color: black;
+        }
+        #fetured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a{
+            background-color: coral;
+            color: #fff;
+        }
+
+        .pagination a{
+            color: #fff;
+            background-color: rgb(169, 169, 169);
+        }
+     </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top ">
+        <div class="container">
+          <!-- <img height="100px" width="120px "src="https://img.freepik.com/free-psd/3d-render-illustration-shopping-cart-isolated-icon_439185-11697.jpg?w=740&t=st=1684574808~exp=1684575408~hmac=d2b66bc2f6c80b6330d6489fcae496c0904b9ad1c015c1d58c0fe1da6d4f64ee" alt=""> -->
+          <img height="70px" width="160px "src="logo2.png"  alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span ></span><i id="bar"class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+
+    
+              <li class="nav-item">
+                <a class="nav-link" href="ecomm.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-active" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-shopping-bag"></i>
+              </li>
+             
+          </div>
+        </div>
+      </nav>
+
+     <!-- Fetured section -->
+
+    <section id="fetured" class="my-5 py-5" >
+    <div class="container text-center mt-5 py-5"> 
+        <h2 class='font-weight-bold' >Our Featured</h2>
+         <hr>
+        <p>Here you can check out our new products with fair price.</p>
+    </div>
+
+    <div class="row mx-auto container" >
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/fashion-shoes_1203-7555.jpg?w=900&t=st=1684650881~exp=1684651481~hmac=f29677d4f1798265fb5ace72cffdbe300bb013e8889ea6dab3f30f95f168c23b" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">High-top Sneakers</h5>
+            <h4 class="p-price">Rs.3790.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/premium-photo/stylish-shoes-white-background-trendy-sneakers_77190-8693.jpg?w=900" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Coloured Sneakers</h5>
+            <h4 class="p-price">Rs.2999.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/pink-handbags_1203-7710.jpg?w=900&t=st=1684652637~exp=1684653237~hmac=77176502ed3ddcc0eed503a8c83fadaac987c6b32c3416dbfdf304673a4b6e6e" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">High-classy Bag</h5>
+            <h4 class="p-price">Rs.2499.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src=" https://img.freepik.com/premium-psd/black-hoodie-mockup_125540-877.jpg?w=900" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Bomberd Hoddie</h5>
+            <h4 class="p-price">Rs.1799.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/glasses-with-slightly-rounded-frame_23-2150670737.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">SunGlasses</h5>
+            <h4 class="p-price">Rs.1370.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/premium-photo/new-brown-leather-wallet-dark-background_93675-92813.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=ais" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Leather Wallet</h5>
+            <h4 class="p-price">Rs.1290.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/premium-psd/tshirt-pocket_617786-26.jpg?w=996" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">T-Shirt</h5>
+            <h4 class="p-price">Rs.720.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src=" https://img.freepik.com/free-photo/jeans_1203-8096.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Blue Jeans</h5>
+            <h4 class="p-price">Rs.2200.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/pink-sweater-front_125540-746.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Sweatshirt</h5>
+            <h4 class="p-price">RS.1299.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/still-life-rendering-jackets-display_23-2149745033.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Leather Jacket</h5>
+            <h4 class="p-price">Rs.4999.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/premium-photo/luxury-black-silver-watch-white-table-monochromatic-concept-complementary-color-concept_237502-66.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Analog Watch</h5>
+            <h4 class="p-price">Rs.7499.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/wood-garment-coat-rain-casual_1203-6475.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=ais" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Cheked Shirts</h5>
+            <h4 class="p-price">RS.1800.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-psd/cap-mockup_1310-495.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">OffWhite Cap</h5>
+            <h4 class="p-price">RS.1199.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/sunglasses_1203-7887.jpg?w=996&t=st=1702373700~exp=1702374300~hmac=6de4487db3ebea3583d47e951e0e2c6c79a49c6c7931c4a49d4d9dac998b6064" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Sunglases</h5>
+            <h4 class="p-price">Rs.880.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/premium-photo/white-brown-hoodie-fashion_889227-727.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Hoodie</h5>
+            <h4 class="p-price">Rs.1600.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+        <div class="product text-center border border-light  col-lg-3 col-md-4 col-12" >
+            <img class="img-fluid mb-3"src="https://img.freepik.com/free-photo/beautiful-elegance-luxury-fashion-pink-women-handbag_1203-7653.jpg?size=626&ext=jpg&ga=GA1.1.590715752.1702370607&semt=sph" alt="">
+            <div class="star">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">HAndbag</h5>
+            <h4 class="p-price">Rs.3299.00</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination mt-5">
+              <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        
+    </div>
+    </section>
+
+
+
+    <!-- Footer section -->
+
+        <footer class="mt-5 py-5">
+            <div class="row container mx-auto pt-5">           <!--     for removing bottom scroll add bt class after row -->
+                <div class="footer-one col-lg-3 col-md-6 col-12">            <!--     bootstrap class row -->
+                    <img style="width: 100px;" src="logo2.png" alt="logo">
+                    <p class="pt-2">All Rights Reserved. Accessibility, User Agreement, Privacy, Payments Terms of Use, Cookies, Your Privacy Choices</p>
+
+                </div>  
+                <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">kids</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">girl</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">shoes</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME, CITY,US</p>
+
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>(123) 456-7890</p>
+                    
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>Shop@email.com</p>
+                    
+                </div>    
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2"src="https://img.freepik.com/free-photo/portrait-beautiful-stylish-young-woman_158538-4020.jpg?w=360&t=st=1689957597~exp=1689958197~hmac=fe0c78788e79789a584afec0081b70522cac1ece0cd3076f3c62605512657c42" alt="img1">
+                    <img class="img-fluid w-25 h-100 m-2"src="https://img.freepik.com/free-photo/young-woman-posing-with-big-frame_1149-1272.jpg?w=360&t=st=1689957655~exp=1689958255~hmac=29b081c2930cffe18ac1907eee809226401af2564d2809ed93b99aa13b86eb51" alt="">
+                    <img class="img-fluid w-25 h-100 m-2"src="https://as2.ftcdn.net/v2/jpg/05/29/11/15/1000_F_529111516_MaEbRuj9KGW1weVNhUkidm7lxtpzPWel.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2"src="https://as2.ftcdn.net/v2/jpg/01/19/54/87/1000_F_119548793_u7KtlEK3i2ZsZnMyb0UXDKzBpd9OX5hI.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2"src="https://as1.ftcdn.net/v2/jpg/01/88/87/20/1000_F_188872056_7ILB7Jnhrb0EtkkCIiLmp0ICjsHA8lX6.jpg" alt="">
+                </div>
+    
+            </div>
+
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img style="width: 140px;" src="pngwing.com.png" alt="payment img">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+                    <p>shopsy eCommerce @ 2023. All Rights Reserved</p>
+                    <p>Saurabh Jagdambe</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+            </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
